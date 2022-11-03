@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+<style >
+	body
+	{
+		background: black;
+
+	}
+	img
+	{
+		width: 300px;
+		height: 158px;
+		position: absolute;
+	}
+.container
+{
+	width: 300px;
+	height: 158px;
+	position: relative;
+	margin-top:15% ;
+	margin-left: 40%;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	transform: rotateX(-10deg) rotatez(-10deg);
+	animation: war 20s linear infinite;
+
+}
+@keyframes war
+{
+	50%{
+		transform: rotateX(30deg);
+	}
+	80%{
+		transform: rotateX(-30deg);
+	}
+}
+.images
+{
+	width: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotate 20s linear infinite;
+}
+@keyframes rotate 
+{
+	0% {
+
+	}
+	100%
+	{
+		transform: rotatey(360deg);
+	}
+}
+img:nth-child(1)
+{
+	transform: rotateY(60deg) translateZ(300px);
+}
+img:nth-child(2)
+{
+	transform: rotateY(120deg) translateZ(300px);
+}
+img:nth-child(3)
+{
+	transform: rotateY(180deg) translateZ(300px);
+}
+img:nth-child(4)
+{
+	transform: rotateY(240deg) translateZ(300px);
+}
+img:nth-child(5)
+{
+	transform: rotateY(300deg) translateZ(300px);
+}
+img:nth-child(6)
+{
+	transform: rotateY(360deg) translateZ(300px);
+}
+img:hover{
+	width: 340px;
+	height: 198px;
+	cursor: pointer;
+}
+
+</style>
+
+</head>
+<body>
+	<div class="container"> 
+		<div class="images">
+			<img src="https://i.imgur.com/dASUopb.gif">
+			<img src="https://thumbs.gfycat.com/AngelicGenuineIrishwolfhound-size_restricted.gif">
+			<img src="https://media2.giphy.com/media/UShetzBnSmKNE3tc4L/giphy.gif">
+			<img src="https://bestanimations.com/media/cartoons/291472622minionsyesreactiongif.gif">
+			<img src="http://24.media.tumblr.com/7e7b7ba4f72a0bb451a3a21a10784e7c/tumblr_mpwprk7Kaj1rzstoto1_500.gif">
+			<img src="http://www.coverbpodcast.com/uploads/1/0/3/0/103079866/deadpool-gif_orig.gif">
+
+
+
+		</div>
+
+
+
+
+	</div>
+
+</body>
+</html>
